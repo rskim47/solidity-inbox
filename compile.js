@@ -8,10 +8,7 @@ const source = fs.readFileSync(inboxPath, 'utf8');
 
 // Logging function 
 const log = (content) => console.log(content)
+//log(solc.compile(source, 1));
 
-log(solc.compile(source, 1));
-
-
-
-
-
+// Exporting Inbox Contract
+module.exports = solc.compile(source, 1).contracts[ ':Inbox' ];
