@@ -1,5 +1,4 @@
 // Compiles the sol file and exports 
-// Standard JS libraries 
 const path = require('path');
 const fs = require('fs');
 const solc = require('solc')
